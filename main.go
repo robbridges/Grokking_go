@@ -2,8 +2,10 @@ package main
 
 import "fmt"
 
+
+
 func main() {
-	result := isNumPalindome(123)
+	result := LengthOfLastWord("Yam       bammers                   ")
 	fmt.Println(result)
 }
 
