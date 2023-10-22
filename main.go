@@ -5,7 +5,7 @@ import "fmt"
 
 
 func main() {
-	result := MajorityElement([]int{1,1,2,3,3,3})
+	result := TopFrequent([]int{1,2,3,4,4}, 2)
 	fmt.Println(result)
 }
 
