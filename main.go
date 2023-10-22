@@ -5,7 +5,7 @@ import "fmt"
 
 
 func main() {
-	result := LengthOfLastWord("Yam       bammers                   ")
+	result := MajorityElement([]int{1,1,2,3,3,3})
 	fmt.Println(result)
 }
 
