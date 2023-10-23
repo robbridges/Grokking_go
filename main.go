@@ -5,7 +5,7 @@ import "fmt"
 
 
 func main() {
-	result := MergeString("abc", "abcd")
+	result := Reverse(-123)
 	fmt.Println(result)
 }
 
