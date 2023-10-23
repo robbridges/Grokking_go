@@ -2,7 +2,7 @@ package main
 
 import "sort"
 
-func threeSum(nums []int, target int) bool {
+func ThreeSum(nums []int, target int) bool {
 	// sort the array
 	sort.Ints(nums)
 	// iterate through the array

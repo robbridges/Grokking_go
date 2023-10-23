@@ -8,11 +8,7 @@ func SingleNumber(nums []int) int {
 	numsMap := make(map[int]int)
 	
 	for _, v := range nums {
-		if _, ok := numsMap[v]; ok {
-			numsMap[v]++
-		} else {
-			numsMap[v] = 1
-		}
+		numsMap[v]++
 	}
 
 	for k,v := range numsMap {
@@ -23,8 +19,8 @@ func SingleNumber(nums []int) int {
 	return 0
 
 	//TODO look into XOR
-	for i := 1; i < len(nums); i++ {
-        nums[0] ^= nums[i]
-    }
-    return nums[0]
+	// for i := 1; i < len(nums); i++ {
+    //     nums[0] ^= nums[i]
+    // }
+    // return nums[0]
 }

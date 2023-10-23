@@ -2,6 +2,26 @@ package main
 
 
 func TopFrequent(nums []int, k int) []int {
+
+// 	if len(nums) <= k {
+// 		return nums
+// 	}
+
+// 	m:= make(map[int]int)
+
+// 	for _, v := range nums {
+// 		m[v]++
+// 	}
+
+// 	ans := []int{}
+
+// 	for i := 0; i < k; i++ {
+// 		maxKey := removeMaxValue(m)
+// 		ans = append(ans, maxKey)
+// 	}
+
+
+
 	if len(nums) <= k {
 		return nums
 	}
@@ -33,5 +53,22 @@ func TopFrequent(nums []int, k int) []int {
 	
 
 	return res
+
+	
 }
+
+// func removeMaxValue(m map[int]int, ) int  {
+// 	max := 0;
+// 	maxKey := 0;
+// 	for k, v := range m {
+// 		if v > max {
+// 			max = v
+// 			maxKey = k 
+// 		}
+// 	}
+	
+	
+// 	delete(m, maxKey)
+// 	return maxKey
+// }
 
