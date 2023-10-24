@@ -2,7 +2,7 @@ package main
 
 
 
-func isNumPalindome(x int ) bool {
+func IsNumPalindome(x int ) bool {
 	original := x
     reversed := 0
 

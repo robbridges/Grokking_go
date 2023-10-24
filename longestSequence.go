@@ -1,6 +1,6 @@
 package main
 
-func longestConsecutive(nums []int) int {
+func LongestConsecutive(nums []int) int {
 	numSet := make(map[int]bool)
 	for _, num := range nums {
 		numSet[num] = true

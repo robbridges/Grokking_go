@@ -1,6 +1,6 @@
 package main
 
-func groupAnagrams(strs []string) [][]string {
+func GroupAnagrams(strs []string) [][]string {
 	// make a map of an array key to value of strings
 	strsTable := make(map[[26]int][]string)
 	// go through each string
