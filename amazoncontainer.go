@@ -1,6 +1,6 @@
 package main
 
-func countStarsBetweenPipes(s string, indices [][]int) []int {
+func CountStarsBetweenPipes(s string, indices [][]int) []int {
 	var counts []int
 	for _, pair := range indices {
 		start, end := pair[0], pair[1]

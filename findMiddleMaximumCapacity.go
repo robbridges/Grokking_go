@@ -1,6 +1,6 @@
 package main
 
-func findMiddleMaximumCapacity(capacity []int32) int32 {
+func FindMiddleMaximumCapacity(capacity []int32) int32 {
 	n := len(capacity)
 	maxCapacity := int32(-1)
 	// go through the list, we are using three pointers

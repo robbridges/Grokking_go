@@ -4,7 +4,7 @@ import (
 	"strings"
 )
 
-func reverseWords(s string) string {
+func ReverseWords(s string) string {
  words := strings.Fields(s)
  start, end := 0, len(words ) -1
  for start < end {

@@ -1,6 +1,6 @@
 package main
 
-func uniqueOccurrences(arr []int) bool {
+func UniqueOccurrences(arr []int) bool {
  numMap := make(map[int]int)
  seen := make(map[int]bool)
  for _, num := range arr {

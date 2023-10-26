@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func FindDifference(nums1 []int, nums2 []int) [][]int {
-    ans := [][]int{[]int{}, []int{}}
+    ans := [][]int{{}, {}}
 	map1 := make(map[int]bool)
 	map2 := make(map[int]bool)
 
