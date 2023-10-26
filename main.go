@@ -5,7 +5,7 @@ import "fmt"
 
 
 func main() {
-	result := reverseWords("hello  s a  sd    world")
+	result := FindDifference([]int{1,2,5}, []int{})
 	fmt.Println(result)
 }
 
