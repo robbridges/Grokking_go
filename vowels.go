@@ -1,3 +1,7 @@
+package main
+
+import "strings"
+
 func reverseVowels(s string) string {
     // To reverse (manupulate a string in any way), convert it to runes as strings are immutable in golang
     runes := []rune(s)
@@ -7,7 +11,7 @@ func reverseVowels(s string) string {
 
     for i < j {
         if isVowel(runes[i]) && isVowel(runes[j]) {
-            runes[i], runes[j] := runes[j], runes[i]
+            runes[i], runes[j] = runes[j], runes[i]
             i++
             j--
         }else{ 
