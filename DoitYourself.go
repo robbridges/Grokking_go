@@ -1,6 +1,7 @@
 package main
 
 import (
+	"math"
 	"sort"
 	"strings"
 )
@@ -34,3 +35,41 @@ func ThreeSumYourself(nums []int, target int) []int {
 	}
 	return ans
   }
+
+func ClosestThree(nums []int, target int) int {
+	var closest int = math.MaxInt32
+	ans := 0
+	for i := 0; i < len(nums) -2; i++ {
+		sum:= nums[i] + nums[i+1] + nums[i + 2]
+		diff := target - sum
+		if diff == 0 {
+			return sum
+		} 
+		if diff < closest {
+			closest = diff
+			ans = sum
+		}
+	}
+	return ans
+}
+
+// func GuessingGame(n int) int {
+// 	start := 1
+//     end := n
+//     num := (start + end) /2
+
+//     for start < end{
+//         guessed := guess(num)
+//         if guessed == 0{
+//             return num
+//         }else if guessed > 0{
+//             start = num + 1
+//             num = (start + end)/2
+//         }else if guessed < 0{
+//             end = num - 1
+//             num = (start + end)/2
+//         }
+//     }
+
+//     return num
+// }
