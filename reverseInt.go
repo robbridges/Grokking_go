@@ -1,8 +1,8 @@
 package main
 
 import (
+	"fmt"
 	"strconv"
-	
 )
 
 func Reverse(x int) int {
@@ -26,7 +26,10 @@ func Reverse(x int) int {
     }
 
     // Convert the reversed string back to an integer
-    reversedInt, _ := strconv.Atoi(res)
+    reversedInt, err := strconv.Atoi(res)
+    if err != nil {
+        fmt.Println(err)
+    }
 
     // Check for integer overflow
     if reversedInt < -2147483648 || reversedInt > 2147483647 {
