@@ -5,7 +5,7 @@ import "fmt"
 
 
 func main() {
-	result := ClosestThree([]int{1,5,2,3,6,4}, 100)
+	// result := FindMaxAverage([]int{1,2,3,4,5,6})
 	fmt.Println(result)
 }
 
