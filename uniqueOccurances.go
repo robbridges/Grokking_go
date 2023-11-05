@@ -1,18 +1,17 @@
 package main
 
 func UniqueOccurrences(arr []int) bool {
- numMap := make(map[int]int)
- seen := make(map[int]bool)
- for _, num := range arr {
-	numMap[num]++
- }
- for _, val := range numMap {
-	if seen[val] {
+ seen := make(map[int]bool) 
+
+ for _, v := range arr {
+	if seen[v] {
 		return false
 	}
-	seen[val] = true
 
+	seen[v] = true
  }
+ 
+ 
  return true
  
 }
