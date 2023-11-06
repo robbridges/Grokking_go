@@ -5,7 +5,7 @@ import "fmt"
 
 
 func main() {
-	result := CanConstruct("aaa", "aab")
+	result := IsSubsequence("abc", "axcde")
 	fmt.Println(result)
 }
 
