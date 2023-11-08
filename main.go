@@ -5,7 +5,7 @@ import "fmt"
 
 
 func main() {
-	result := IsSubsequence("abc", "axcde")
+	result := Rotate([]int{-1,-100,3,99}, 2)
 	fmt.Println(result)
 }
 
