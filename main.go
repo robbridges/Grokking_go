@@ -5,7 +5,7 @@ import "fmt"
 
 
 func main() {
-	result := Rotate([]int{-1,-100,3,99}, 2)
+	result := ConcurrentReadAndWrite([]int{1,2,3,4,5,6,7,8,9,10})
 	fmt.Println(result)
 }
 
