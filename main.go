@@ -5,7 +5,7 @@ import "fmt"
 
 
 func main() {
-	result := ConcurrentReadAndWrite([]int{1,2,3,4,5,6,7,8,9,10})
+	result := canAttendMeetings([]Interval{{start: 1, end: 3}, {start: 5, end:10}, {start:15, end: 20}})
 	fmt.Println(result)
 }
 
