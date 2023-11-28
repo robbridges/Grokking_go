@@ -7,21 +7,22 @@ type Interval struct {
 	end int
 }
 
-func canAttendMeetings(intervals []Interval) bool {
+func canAttendMeetings(intervals [][]int) bool {
 	starts := []int{}
-	ends := []int{}
-	for _, interval := range intervals {
-		starts = append(starts, interval.start)
-		ends = append(ends, interval.end)
-	}
-	sort.Ints(starts)
-	sort.Ints(ends)
+ends := []int{}
+for _, interval := range intervals {
+    starts = append(starts, interval[0])
+    ends = append(ends, interval[1])
+}
+sort.Ints(starts)
+sort.Ints(ends)
 
-	for i:= 0; i < len(intervals) -1; i++ {
-		if starts[i + 1] < ends[i] {
-			return false
-		}
-	}
+for i := 0; i < len(intervals) - 1; i++ {
+    // check to see if the next meeting starts before this meeting ends if so, return false
+    if starts[i+1] < ends[i] {
+        return false
+    }
+}
 
-	return true
+return true
 }
