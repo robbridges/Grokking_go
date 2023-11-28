@@ -9,8 +9,8 @@ type Interval struct {
 
 func canAttendMeetings(intervals [][]int) bool {
 	starts := []int{}
-ends := []int{}
-for _, interval := range intervals {
+	ends := []int{}
+	for _, interval := range intervals {
     starts = append(starts, interval[0])
     ends = append(ends, interval[1])
 }
