@@ -35,3 +35,27 @@ func CleanPalindome(s string) bool {
 	return IsPaldindome(cleaned)
 	
 }
+// most efficent to handle a single word that is not a paldindome, assume no edge cases of non letter character.
+func isPalindome(s string) bool {
+	
+    
+	left, right := 0, len(s) - 1
+	for left < right {
+		leftRune := rune(s[left])
+        rightRune := rune(s[right])
+		if unicode.IsUpper(leftRune) {
+            leftRune = unicode.ToLower(leftRune)
+        }
+        if unicode.IsUpper(rightRune) {
+            rightRune = unicode.ToLower(rightRune)
+        }
+		if leftRune != rightRune {
+            return false
+        }
+		left++
+		right--
+	}
+	return true
+}
+
+
