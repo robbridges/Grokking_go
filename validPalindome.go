@@ -36,7 +36,7 @@ func CleanPalindome(s string) bool {
 	
 }
 // most efficent to handle a single word that is not a paldindome, assume no edge cases of non letter character.
-func isPalindome(s string) bool {
+func IsPalindrome(s string) bool {
 	
     
 	left, right := 0, len(s) - 1

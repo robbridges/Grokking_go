@@ -1,6 +1,6 @@
 package main
 
-func trap(height []int) int {
+func Trap(height []int) int {
 	if height == nil {
 		return 0
 	}

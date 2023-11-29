@@ -6,7 +6,7 @@ var Parentheses = map[rune]rune{
 	'[': ']',
 }
 
-func isValid(s string) bool {
+func IsValid(s string) bool {
 	stack := []rune{}
 	for _, c := range s {
 		v, ok := Parentheses[c]; if ok {
