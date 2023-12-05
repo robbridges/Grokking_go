@@ -5,7 +5,7 @@ import "fmt"
 
 
 func main() {
-	result := LargestAltitude([]int{-4, -3, -2, -1, 4, 3, 2})
+	result := LengthOfLastWord("luffy is still joyboy")
 	fmt.Println(result)
 }
 
