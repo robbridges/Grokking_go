@@ -41,9 +41,7 @@ func LengthOfLastWord(s string) int {
             builder.WriteRune(char)
         }
     }
-    if builder.Len() != 0 {
-        words = append(words, builder.String())
-    }
+    
     if builder.Len() != 0 {
         words = append(words, builder.String())
     }
