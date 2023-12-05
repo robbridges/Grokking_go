@@ -1,8 +1,6 @@
 package main
 
-import (
-	"strings"
-)
+
 
 
 
@@ -29,21 +27,36 @@ func LengthOfLastWord(s string) int {
 	// cur := strings.Split(trimmed, " ")
 	// return len(cur[len(cur) -1])
 
-    words := []string{}
-    var builder strings.Builder
-    for _, char := range s {
-        if char == ' ' {
-            if builder.Len() != 0 {
-                words = append(words, builder.String())
-                builder.Reset()
+    // words := []string{}
+    // var builder strings.Builder
+    // for _, char := range s {
+    //     if char == ' ' {
+    //         if builder.Len() != 0 {
+    //             words = append(words, builder.String())
+    //             builder.Reset()
+    //         }
+    //     } else {
+    //         builder.WriteRune(char)
+    //     }
+    // }
+    
+    // if builder.Len() != 0 {
+    //     words = append(words, builder.String())
+    // }
+	// return len(words[len(words) - 1])
+    length := 0
+    trailingSpaces := true
+
+    for i := len(s) - 1; i >= 0; i-- {
+        if s[i] == ' ' {
+            if !trailingSpaces {
+                break
             }
         } else {
-            builder.WriteRune(char)
+            trailingSpaces = false
+            length++
         }
     }
-    
-    if builder.Len() != 0 {
-        words = append(words, builder.String())
-    }
-	return len(words[len(words) - 1])
+
+    return length
 }
