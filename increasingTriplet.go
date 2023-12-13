@@ -7,9 +7,11 @@ func increasingTriplet(nums []int) bool {
     for _, num := range nums {
         if num <= first {
             first = num
-        } else if num <= second {
+        }
+        if num > first && num <= second {
             second = num
-        } else {
+        }
+        if num > second {
             return true
         }
     }
